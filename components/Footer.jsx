@@ -7,7 +7,7 @@ import UpworkIcon from "../svg/upwork.svg";
 
 export default function Footer() {
   return (
-    <footer className="bg-white relative overflow-hidden">
+    <footer className="relative overflow-hidden">
       <div className="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
         <div className="flex justify-center mt-8 space-x-6">
           <Link href="https://twitter.com/eceqe">

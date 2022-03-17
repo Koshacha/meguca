@@ -5,14 +5,16 @@ import ButtonArrowSvg from "../svg/button-arrow.svg";
 export default function Lead() {
   return (
     <section className="relative overflow-hidden lg:overflow-visible flex items-center justify-center py-10 text-white bg-white sm:py-16 md:py-24 lg:py-32">
-      <div className="relative max-w-4xl px-10 text-center text-white auto lg:px-0">
+      <div className="relative max-w-4xl px-8 md:px-10 text-center text-white auto lg:px-0">
         <div className="flex flex-col w-full md:flex-row justify-between">
           <div className="flex flex-col items-start">
-            <h1 className="relative flex flex-col text-5xl font-extrabold text-left text-black mb-6">
+            <h1 className="relative flex flex-col text-4xl font-extrabold text-left text-black mb-6">
               JavaScript Developer
-              <span className="">for your next project</span>
+              <span className="text-3xl md:text-4xl ">
+                for your next project
+              </span>
             </h1>
-            <h2 className="text-left text-gray-500 xl:text-xl mb-8">
+            <h2 className="text-left text-gray-500 xl:text-lg mb-8">
               Let’s create awesome apps together. I hope you consider me to be
               part of your business. I look forward to fruitful cooperation.
               Contact me so we can discuss your project as soon as possible.
@@ -27,7 +29,7 @@ export default function Lead() {
               />
             </button>
           </div>
-          <div className="relative h-64 mt-12 md:-mt-16 md:h-96">
+          <div className="relative h-auto xl:h-64 mt-12 md:-mt-16 md:h-96">
             <Image
               src="/images/rocket.png"
               alt=""
@@ -37,7 +39,6 @@ export default function Lead() {
             />
           </div>
         </div>
-        <div className="my-16 border-b border-gray-300 lg:my-24"></div>
       </div>
       <Background>
         <div className="absolute -left-14 xl:left-20 2xl:left-52 -top-10">
