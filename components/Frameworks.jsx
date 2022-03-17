@@ -13,12 +13,12 @@ import WebpackIcon from "../svg/tech/webpack.svg";
 
 export default function Frameworks() {
   return (
-    <section className="w-full py-16 overflow-hidden xl:overflow-visible bg-white relative">
-      <div className="max-w-6xl relative mx-auto flex sm:px-0 px-10 flex-col items-start sm:items-center justify-center">
-        <h2 className="text-gray-900 text-3xl font-bold">
+    <section className="w-full py-16 xl:overflow-visible relative">
+      <div className="max-w-6xl relative mx-auto flex sm:px-0 px-8 md:px-10 flex-col items-start sm:items-center justify-center">
+        <h2 className="text-gray-900 dark:text-white text-3xl font-bold">
           I work with any solutions
         </h2>
-        <p className="text-gray-600 text-lg text-left sm:text-center max-w-lg mt-5">
+        <p className="text-gray-600 dark:text-gray-400 text-lg text-left sm:text-center max-w-lg mt-5">
           In my projects, I use these and many other frameworks or libraries. If
           your project is built in something else, feel free to contact me, I am
           always open to learning new technologies. I am also open to building
@@ -39,29 +39,29 @@ export default function Frameworks() {
             ></path>
           </svg>
         </button>
-        <div className="flex flex-wrap justify-start sm:grid sm:grid-cols-4 lg:grid-cols-8 gap-6 mt-8">
-          <div className="h-20 w-20 bg-white rounded-2xl hover:scale-125 transition-all ease-out cursor-pointer duration-200 border border-gray-200 flex items-center justify-center">
+        <div className="grid grid-cols-4 lg:grid-cols-8 gap-6 mt-8">
+          <div className="h-20 w-20 rounded-2xl hover:scale-125 transition-all ease-out cursor-pointer duration-200 border border-gray-200 dark:border-gray-700 flex items-center justify-center">
             <TypeScriptIcon className="w-12 h-12" viewBox="0 0 512 512" />
           </div>
-          <div className="h-20 w-20 bg-white rounded-2xl hover:scale-125 transition-all ease-out cursor-pointer duration-200 border border-gray-200 flex items-center justify-center">
+          <div className="h-20 w-20 rounded-2xl hover:scale-125 transition-all ease-out cursor-pointer duration-200 border border-gray-200 dark:border-gray-700 flex items-center justify-center">
             <ReactIcon className="w-12 h-12" />
           </div>
-          <div className="h-20 w-20 bg-white rounded-2xl hover:scale-125 transition-all ease-out cursor-pointer duration-200 border border-gray-200 flex items-center justify-center">
+          <div className="h-20 w-20 rounded-2xl hover:scale-125 transition-all ease-out cursor-pointer duration-200 border border-gray-200 dark:border-gray-700 flex items-center justify-center">
             <ReduxIcon className="w-12 h-12" viewBox="0 0 256 244" />
           </div>
-          <div className="h-20 w-20 bg-white rounded-2xl hover:scale-125 transition-all ease-out cursor-pointer duration-200 border border-gray-200 flex items-center justify-center">
-            <NextIcon className="w-12 h-12" viewBox="0 0 207 124" />
+          <div className="h-20 w-20 rounded-2xl hover:scale-125 transition-all ease-out cursor-pointer duration-200 border border-gray-200 dark:border-gray-700 flex items-center justify-center">
+            <NextIcon className="w-12 h-12 invert" viewBox="0 0 207 124" />
           </div>
-          <div className="h-20 w-20 bg-white rounded-2xl hover:scale-125 transition-all ease-out cursor-pointer duration-200 border border-gray-200 flex items-center justify-center">
+          <div className="h-20 w-20 rounded-2xl hover:scale-125 transition-all ease-out cursor-pointer duration-200 border border-gray-200 dark:border-gray-700 flex items-center justify-center">
             <GoogleScriptIcon className="w-12 h-12" viewBox="0 0 512 512" />
           </div>
-          <div className="h-20 w-20 bg-white rounded-2xl hover:scale-125 transition-all ease-out cursor-pointer duration-200 border border-gray-200 flex items-center justify-center">
+          <div className="h-20 w-20 rounded-2xl hover:scale-125 transition-all ease-out cursor-pointer duration-200 border border-gray-200  dark:border-gray-700 flex items-center justify-center">
             <SassIcon className="w-12 h-12" viewBox="0 0 547.8 410.6" />
           </div>
-          <div className="h-20 w-20 bg-white rounded-2xl hover:scale-125 transition-all ease-out cursor-pointer duration-200 border border-gray-200 flex items-center justify-center">
+          <div className="h-20 w-20 rounded-2xl hover:scale-125 transition-all ease-out cursor-pointer duration-200 border border-gray-200 dark:border-gray-700 flex items-center justify-center">
             <TailwindIcon className="w-12 h-12" viewBox="0 0 1000 1000" />
           </div>
-          <div className="h-20 w-20 bg-white rounded-2xl hover:scale-125 transition-all ease-out cursor-pointer duration-200 border border-gray-200 flex items-center justify-center">
+          <div className="h-20 w-20 rounded-2xl hover:scale-125 transition-all ease-out cursor-pointer duration-200 border border-gray-200 dark:border-gray-700 flex items-center justify-center">
             <WebpackIcon className="w-12 h-12" viewBox="0 0 774 875.7" />
           </div>
         </div>

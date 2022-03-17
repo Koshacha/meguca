@@ -16,7 +16,7 @@ class MyDocument extends Document {
             media="all"
           />
         </Head>
-        <body>
+        <body className="bg-white dark:bg-neutral-900">
           <Main />
           <NextScript />
         </body>
