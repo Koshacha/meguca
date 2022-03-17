@@ -4,10 +4,10 @@ import LampSvg from "../svg/lamp.svg";
 export default function Header() {
   return (
     <header className="relative w-full px-8 text-gray-700 bg-white body-font">
-      <div className="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-3xl">
+      <div className="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-4xl">
         <Link href="/">
           <a className="relative z-10 flex items-center w-auto text-2xl font-extrabold leading-none text-black select-none">
-            meguca.
+            ilya.
           </a>
         </Link>
 
