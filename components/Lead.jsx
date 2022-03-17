@@ -4,7 +4,7 @@ import ButtonArrowSvg from "../svg/button-arrow.svg";
 
 export default function Lead() {
   return (
-    <section className="relative flex items-center justify-center py-10 text-white bg-white sm:py-16 md:py-24 lg:py-32">
+    <section className="relative overflow-hidden lg:overflow-visible flex items-center justify-center py-10 text-white bg-white sm:py-16 md:py-24 lg:py-32">
       <div className="relative max-w-4xl px-10 text-center text-white auto lg:px-0">
         <div className="flex flex-col w-full md:flex-row justify-between">
           <div className="flex flex-col items-start">
@@ -27,21 +27,29 @@ export default function Lead() {
               />
             </button>
           </div>
-          <div className="relative h-64 mt-12 md:-mt-16 md:h-96"></div>
+          <div className="relative h-64 mt-12 md:-mt-16 md:h-96">
+            <Image
+              src="/images/rocket.png"
+              alt=""
+              width={4320 / 2.5}
+              height={4320 / 2.5}
+              quality="100"
+            />
+          </div>
         </div>
         <div className="my-16 border-b border-gray-300 lg:my-24"></div>
       </div>
       <Background>
-        <div className="absolute left-44 top-0">
+        <div className="absolute -left-14 xl:left-20 2xl:left-52 -top-10">
           <Image
-            src="/images/bg/ball.png"
+            src="/images/bg/arrow.png"
             alt=""
-            width={426 / 2.5}
-            height={427 / 2.5}
+            width={683 / 8}
+            height={985 / 8}
             quality="100"
           />
         </div>
-        <div className="absolute left-28 bottom-20">
+        <div className="absolute -left-14 xl:left-10 2xl:left-28 bottom-10 xl:bottom-64 2xl:bottom-20">
           <Image
             src="/images/bg/spring.png"
             alt=""
@@ -50,7 +58,7 @@ export default function Lead() {
             quality="100"
           />
         </div>
-        <div className="absolute right-32 top-28">
+        <div className="absolute -right-16 md:right-0 xl:right-28 2xl:right-32 top-0 md:top-14 2xl:top-28">
           <Image
             src="/images/bg/spring-2.png"
             alt=""
@@ -59,7 +67,7 @@ export default function Lead() {
             quality="100"
           />
         </div>
-        <div className="absolute right-64 bottom-16">
+        <div className="absolute -right-16 md:-right-14 xl:right-10 2xl:right-64 bottom-64 md:bottom-0 xl:bottom-10 2xl:bottom-16">
           <Image
             src="/images/bg/dango.png"
             alt=""

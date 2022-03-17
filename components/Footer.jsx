@@ -1,11 +1,13 @@
 import Link from "next/link";
+import Image from "next/image";
+import Background from "./Background";
 import TwitterIcon from "../svg/twitter.svg";
 import GithubIcon from "../svg/github.svg";
 import UpworkIcon from "../svg/upwork.svg";
 
 export default function Footer() {
   return (
-    <footer className="bg-white">
+    <footer className="bg-white relative overflow-hidden">
       <div className="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
         <div className="flex justify-center mt-8 space-x-6">
           <Link href="https://twitter.com/eceqe">
@@ -31,6 +33,17 @@ export default function Footer() {
           {new Date().getFullYear()}, Ilya Mazunin
         </p>
       </div>
+      <Background>
+        <div className="absolute hidden md:block md:left-28 xl:left-1/4 md:bottom-5 xl:-bottom-10">
+          <Image
+            src="/images/bg/spring-3.png"
+            alt=""
+            width={694 / 7}
+            height={796 / 7}
+            quality="100"
+          />
+        </div>
+      </Background>
     </footer>
   );
 }

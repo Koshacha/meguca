@@ -9,7 +9,7 @@ import VueIcon from "../svg/tech/vue.svg";
 
 export default function Frameworks() {
   return (
-    <section className="w-full py-16 overflow-visible bg-white relative">
+    <section className="w-full py-16 overflow-hidden xl:overflow-visible bg-white relative">
       <div className="max-w-6xl relative mx-auto flex sm:px-0 px-10 flex-col items-start sm:items-center justify-center">
         <h2 className="text-gray-900 text-3xl font-bold">
           I work with 1,000+ apps.
@@ -50,7 +50,7 @@ export default function Frameworks() {
         </div>
       </div>
       <Background>
-        <div className="absolute left-1/3 -top-32">
+        <div className="absolute rotate-12 md:rotate-0 -right-5 md:-right-10 xl:right-24 -bottom-8 md:bottom-0">
           <Image
             src="/images/bg/doodle.png"
             alt=""
