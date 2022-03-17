@@ -13,7 +13,7 @@ export default function Footer() {
           <Link href="https://twitter.com/eceqe">
             <a className="text-gray-400 hover:text-gray-500">
               <span className="sr-only">Twitter</span>
-              <TwitterIcon class="w-6 h-6" viewBox="0 0 24 24" />
+              <TwitterIcon className="w-6 h-6" viewBox="0 0 24 24" />
             </a>
           </Link>
           <Link href="https://github.com/Koshacha">
