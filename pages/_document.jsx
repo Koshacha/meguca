@@ -19,6 +19,10 @@ class MyDocument extends Document {
         <body className="bg-white dark:bg-neutral-900">
           <Main />
           <NextScript />
+          <script
+            src="https://code.tidio.co/lz968h3xmk1jc9ypufwnvfmejiivmj2q.js"
+            async
+          ></script>
         </body>
       </Html>
     );

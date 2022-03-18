@@ -19,7 +19,13 @@ export default function Lead() {
               part of your business. I look forward to fruitful cooperation.
               Contact me so we can discuss your project as soon as possible.
             </h2>
-            <button className="inline-flex items-center h-10 rounded-full text-sm font-semibold whitespace-nowrap px-5 focus:outline-none focus:ring-2 bg-sky-50 text-sky-600 hover:bg-sky-100 hover:text-sky-700 focus:ring-sky-600 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500">
+            <button
+              className="inline-flex items-center h-10 rounded-full text-sm font-semibold whitespace-nowrap px-5 focus:outline-none focus:ring-2 bg-sky-50 text-sky-600 hover:bg-sky-100 hover:text-sky-700 focus:ring-sky-600 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500"
+              onClick={(e) => {
+                window.tidioChatApi.show();
+                window.tidioChatApi.open();
+              }}
+            >
               Get started{" "}
               <ButtonArrowSvg
                 className="overflow-visible ml-3 text-indigo-300 group-hover:text-indigo-400 dark:text-slate-500 dark:group-hover:text-slate-400"

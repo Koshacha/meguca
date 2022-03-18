@@ -24,7 +24,13 @@ export default function Frameworks() {
           always open to learning new technologies. I am also open to building
           integrations for any popular third-party services. 🙌
         </p>
-        <button className="text-indigo-500 font-bold text-lg mt-5 flex items-center group">
+        <button
+          className="text-indigo-500 font-bold text-lg mt-5 flex items-center group"
+          onClick={(e) => {
+            window.tidioChatApi.show();
+            window.tidioChatApi.open();
+          }}
+        >
           <span>Get started</span>
           <svg
             className="w-5 h-5 group-hover:ml-1 transition-all ease-out duration-200"
