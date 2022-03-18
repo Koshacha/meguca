@@ -7,7 +7,7 @@ export default function Header() {
       <div className="container flex flex-row flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-4xl">
         <Link href="/">
           <a className="relative z-10 flex items-center w-auto text-2xl font-extrabold leading-none text-black dark:text-white select-none">
-            ilya.
+            ilya<span className="text-indigo-500">.</span>
           </a>
         </Link>
         <nav className="top-0 left-0 z-0 flex items-center justify-center w-auto md:w-full h-full py-5 -ml-0 space-x-5 text-base md:-ml-5 md:py-0 md:absolute">
