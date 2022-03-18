@@ -50,7 +50,7 @@ export default function Frameworks() {
             <ReduxIcon className="w-12 h-12" viewBox="0 0 256 244" />
           </div>
           <div className="h-20 w-20 rounded-2xl hover:scale-125 transition-all ease-out cursor-pointer duration-200 border border-gray-200 dark:border-gray-700 flex items-center justify-center">
-            <NextIcon className="w-12 h-12 invert" viewBox="0 0 207 124" />
+            <NextIcon className="w-12 h-12 dark:invert" viewBox="0 0 207 124" />
           </div>
           <div className="h-20 w-20 rounded-2xl hover:scale-125 transition-all ease-out cursor-pointer duration-200 border border-gray-200 dark:border-gray-700 flex items-center justify-center">
             <GoogleScriptIcon className="w-12 h-12" viewBox="0 0 512 512" />
