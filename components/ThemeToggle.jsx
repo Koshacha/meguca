@@ -14,7 +14,6 @@ export default function ThemeToggle() {
       <button
         className="w-9 h-9 bg-gray-200 rounded-lg dark:bg-gray-600 flex items-center justify-center hover:ring-2 ring-gray-300 transition-all"
         onClick={() => {
-          console.log("ttt");
           setTheme(theme);
         }}
       >
