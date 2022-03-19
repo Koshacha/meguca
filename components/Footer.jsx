@@ -34,7 +34,7 @@ export default function Footer() {
         </p>
       </div>
       <Background>
-        <div className="absolute hidden md:block md:left-28 xl:left-1/4 md:bottom-5 xl:-bottom-10">
+        <div className="absolute hidden md:block md:left-28 xl:left-48 md:bottom-5 xl:bottom-20">
           <Image
             src="/images/bg/spring-3.png"
             alt=""

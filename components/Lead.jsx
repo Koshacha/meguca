@@ -74,7 +74,7 @@ export default function Lead() {
             quality="100"
           />
         </div>
-        <div className="absolute -right-16 md:-right-14 xl:right-10 2xl:right-64 bottom-64 md:bottom-0 xl:bottom-10 2xl:bottom-16">
+        <div className="absolute -right-16 md:-right-14 xl:right-10 2xl:right-64 bottom-64 md:bottom-0 xl:bottom-0 2xl:-bottom-32">
           <Image
             src="/images/bg/dango.png"
             alt=""
