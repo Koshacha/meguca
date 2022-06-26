@@ -1,23 +1,25 @@
-import Background from "./Background";
-import Image from "next/image";
-import ButtonArrowSvg from "../svg/button-arrow.svg";
+import Background from './Background';
+import Image from 'next/image';
+import ButtonArrowSvg from '../svg/button-arrow.svg';
+import { useContext } from 'react';
+import AppContext from '../context/AppContext';
 
 export default function Lead() {
+  const context = useContext(AppContext);
+  const { locale } = context;
+  const { lang } = locale;
+
   return (
     <section className="relative overflow-hidden lg:overflow-visible flex items-center justify-center py-10 text-white sm:py-16 md:py-24 lg:py-32">
       <div className="relative max-w-4xl px-8 md:px-10 text-center text-white auto lg:px-0">
-        <div className="flex flex-col w-full md:flex-row justify-between">
-          <div className="flex flex-col items-start">
-            <h1 className="relative flex flex-col text-4xl font-extrabold text-left text-black dark:text-white mb-6">
-              JavaScript Developer
-              <span className="text-3xl md:text-4xl ">
-                for your next project
-              </span>
+        <div className="flex flex-col w-full md:flex-row justify-between items-center">
+          <div className="flex flex-col items-start flex-[1.5]">
+            <h1 className="relative flex flex-col text-4xl font-extrabold text-left text-black dark:text-white mb-6 font-display">
+              {lang.lead.title_0}
+              <span className="text-3xl md:text-4xl">{lang.lead.title_1}</span>
             </h1>
             <h2 className="text-left text-gray-500 dark:text-gray-300 xl:text-lg mb-8">
-              Let’s create awesome apps together. I hope you consider me to be
-              part of your business. I look forward to fruitful cooperation.
-              Contact me so we can discuss your project as soon as possible.
+              {lang.lead.subtitle}
             </h2>
             <button
               className="inline-flex items-center h-10 rounded-full text-sm font-semibold whitespace-nowrap px-5 focus:outline-none focus:ring-2 bg-sky-50 text-sky-600 hover:bg-sky-100 hover:text-sky-700 focus:ring-sky-600 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500"
@@ -26,7 +28,7 @@ export default function Lead() {
                 window.tidioChatApi.open();
               }}
             >
-              Get started{" "}
+              {lang.lead.button}{' '}
               <ButtonArrowSvg
                 className="overflow-visible ml-3 text-indigo-300 group-hover:text-indigo-400 dark:text-slate-500 dark:group-hover:text-slate-400"
                 width="3"
@@ -35,7 +37,7 @@ export default function Lead() {
               />
             </button>
           </div>
-          <div className="relative h-auto xl:h-64 mt-12 md:-mt-16 md:h-96">
+          <div className="relative h-auto xl:h-64 mt-12 md:-mt-16 md:h-96 flex-1">
             <Image
               src="/images/rocket.png"
               alt=""
@@ -74,7 +76,7 @@ export default function Lead() {
             quality="100"
           />
         </div>
-        <div className="absolute -right-16 md:-right-14 xl:right-10 2xl:right-64 bottom-64 md:bottom-0 xl:bottom-0 2xl:-bottom-32">
+        {/* <div className="absolute -right-16 md:-right-14 xl:right-10 2xl:right-64 bottom-64 md:bottom-0 xl:bottom-0 2xl:-bottom-32">
           <Image
             src="/images/bg/dango.png"
             alt=""
@@ -82,7 +84,7 @@ export default function Lead() {
             height={518 / 2.5}
             quality="100"
           />
-        </div>
+        </div> */}
       </Background>
     </section>
   );

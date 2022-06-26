@@ -2,7 +2,12 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["cdn.devdojo.com"],
+    domains: ['meguca.site'],
+  },
+  i18n: {
+    locales: ['en', 'ru'],
+    defaultLocale: 'en',
+    localeDetection: true,
   },
 };
 

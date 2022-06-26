@@ -2,22 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-display: swap;
+  font-family: RocketFont;
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/rocket.woff2) format("woff2"), url(fonts/rocket.woff) format("woff")
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 body {
   font-family: 'Nunito',
-    ui-sans-serif,
     system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    "Helvetica Neue",
-    Arial,
-    "Noto Sans",
-    sans-serif,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Noto Color Emoji";
+    sans-serif;
 }

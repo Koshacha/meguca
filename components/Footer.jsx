@@ -1,21 +1,21 @@
-import Link from "next/link";
-import Image from "next/image";
-import Background from "./Background";
-import TwitterIcon from "../svg/twitter.svg";
-import GithubIcon from "../svg/github.svg";
-import UpworkIcon from "../svg/upwork.svg";
+import Link from 'next/link';
+import Image from 'next/image';
+import Background from './Background';
+// import TwitterIcon from '../svg/twitter.svg';
+import GithubIcon from '../svg/github.svg';
+import UpworkIcon from '../svg/upwork.svg';
 
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden">
       <div className="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
         <div className="flex justify-center mt-8 space-x-6">
-          <Link href="https://twitter.com/eceqe">
+          {/* <Link href="https://twitter.com/eceqe">
             <a className="text-gray-400 hover:text-gray-500">
               <span className="sr-only">Twitter</span>
               <TwitterIcon className="w-6 h-6" viewBox="0 0 24 24" />
             </a>
-          </Link>
+          </Link> */}
           <Link href="https://github.com/Koshacha">
             <a className="text-gray-400 hover:text-gray-500">
               <span className="sr-only">GitHub</span>

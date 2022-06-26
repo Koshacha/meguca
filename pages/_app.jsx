@@ -1,7 +1,12 @@
-import Script from "next/script";
-import "../styles/globals.css";
+import Script from 'next/script';
+import AppContext from '../context/AppContext';
+import '../styles/globals.css';
+import { useRouter } from 'next/router';
+import locales from '../locales';
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+  const lang = locales[router.locale];
   return (
     <>
       <Script
@@ -17,7 +22,13 @@ function MyApp({ Component, pageProps }) {
           gtag('config', 'G-ZEGKCG1L3R');
         `}
       </Script>
-      <Component {...pageProps} />
+      <AppContext.Provider
+        value={{
+          locale: { lang },
+        }}
+      >
+        <Component {...pageProps} />
+      </AppContext.Provider>
     </>
   );
 }
