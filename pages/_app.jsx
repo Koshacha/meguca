@@ -1,10 +1,12 @@
 import Script from 'next/script';
 import AppContext from '../context/AppContext';
 import '../styles/globals.css';
-import locales from '../locales';
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 function MyApp({ Component, pageProps }) {
-  const lang = locales['ru'];
+  const { t } = useTranslation();
+	const [query] = useLanguageQuery();
+
   return (
     <>
       <Script
@@ -22,7 +24,10 @@ function MyApp({ Component, pageProps }) {
       </Script>
       <AppContext.Provider
         value={{
-          locale: { lang },
+          locale: { 
+            translate: t,
+            lang: query
+          },
         }}
       >
         <Component {...pageProps} />

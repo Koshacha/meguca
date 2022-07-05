@@ -7,7 +7,7 @@ import AppContext from '../context/AppContext';
 export default function Lead() {
   const context = useContext(AppContext);
   const { locale } = context;
-  const { lang } = locale;
+  const { translate, lang } = locale;
 
   return (
     <section className="relative overflow-hidden lg:overflow-visible flex items-center justify-center py-10 text-white sm:py-16 md:py-24 lg:py-32">
@@ -15,11 +15,11 @@ export default function Lead() {
         <div className="flex flex-col w-full md:flex-row justify-between items-center">
           <div className="flex flex-col items-start flex-[1.5]">
             <h1 className="relative flex flex-col text-4xl font-extrabold text-left text-black dark:text-white mb-6 font-display">
-              {lang.lead.title_0}
-              <span className="text-3xl md:text-4xl">{lang.lead.title_1}</span>
+              {translate('lead.title_0')}
+              <span className="text-3xl md:text-4xl">{translate('lead.title_1')}</span>
             </h1>
             <h2 className="text-left text-gray-500 dark:text-gray-300 xl:text-lg mb-8">
-              {lang.lead.subtitle}
+              {translate('lead.subtitle')}
             </h2>
             <button
               className="inline-flex items-center h-10 rounded-full text-sm font-semibold whitespace-nowrap px-5 focus:outline-none focus:ring-2 bg-sky-50 text-sky-600 hover:bg-sky-100 hover:text-sky-700 focus:ring-sky-600 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500"
@@ -28,7 +28,7 @@ export default function Lead() {
                 window.tidioChatApi.open();
               }}
             >
-              {lang.lead.button}{' '}
+              {translate('lead.button')}{' '}
               <ButtonArrowSvg
                 className="overflow-visible ml-3 text-indigo-300 group-hover:text-indigo-400 dark:text-slate-500 dark:group-hover:text-slate-400"
                 width="3"
