@@ -1,12 +1,10 @@
 import Script from 'next/script';
 import AppContext from '../context/AppContext';
 import '../styles/globals.css';
-import { useRouter } from 'next/router';
 import locales from '../locales';
 
 function MyApp({ Component, pageProps }) {
-  const router = useRouter();
-  const lang = locales[router.locale];
+  const lang = locales['ru'];
   return (
     <>
       <Script
