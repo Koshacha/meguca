@@ -1,12 +1,8 @@
 import Script from 'next/script';
 import AppContext from '../context/AppContext';
 import '../styles/globals.css';
-import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 function MyApp({ Component, pageProps }) {
-  const { t } = useTranslation();
-	const [query] = useLanguageQuery();
-
   return (
     <>
       <Script
@@ -22,14 +18,7 @@ function MyApp({ Component, pageProps }) {
           gtag('config', 'G-ZEGKCG1L3R');
         `}
       </Script>
-      <AppContext.Provider
-        value={{
-          locale: { 
-            translate: t,
-            lang: query
-          },
-        }}
-      >
+      <AppContext.Provider value={{}}>
         <Component {...pageProps} />
       </AppContext.Provider>
     </>
