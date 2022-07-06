@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { Lead } from '../components/Lead';
 
 export default function Home() {
   return (
@@ -6,7 +7,7 @@ export default function Home() {
       <Head>
         <title>Ilya Mazunin — JavaScript Developer</title>
       </Head>
-      <p>Test</p>
+      <Lead />
     </>
   );
 }

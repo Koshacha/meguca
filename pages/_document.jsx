@@ -12,11 +12,11 @@ class MyDocument extends Document {
           <link
             rel="stylesheet"
             type="text/css"
-            href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Gantari&display=swap"
             media="all"
           />
         </Head>
-        <body className="bg-white dark:bg-neutral-900">
+        <body className="bg-bg">
           <Main />
           <NextScript />
         </body>
