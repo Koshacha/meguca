@@ -15,15 +15,10 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
             media="all"
           />
-          <meta name='freelancehunt' content='f25b7c1b02432c5' />
         </Head>
         <body className="bg-white dark:bg-neutral-900">
           <Main />
           <NextScript />
-          <script
-            src="https://code.tidio.co/lz968h3xmk1jc9ypufwnvfmejiivmj2q.js"
-            async
-          ></script>
         </body>
       </Html>
     );
