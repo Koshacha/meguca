@@ -10,10 +10,6 @@ export const Lead = () => {
       icon: faTelegram
     },
     {
-      link: 'tel:79994512512',
-      icon: faWhatsapp
-    },
-    {
       link: 'mailto:baka@derpy.ru',
       icon: faEnvelope
     }
