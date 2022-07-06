@@ -1,0 +1,63 @@
+query ($user: String, $userId: Int) {
+  # anime lists
+  MediaListCollection(userName: $user, type: ANIME) {
+    lists {
+      name
+      isSplitCompletedList
+      status
+      entries {
+        media {
+          id
+          title {
+            romaji
+            native
+          }
+          episodes
+          format
+          duration
+          isFavourite
+          isAdult
+        }
+        status
+        score
+        progress
+      }
+    }
+  }
+  # user statistic
+  User(name: $user) {
+    statistics {
+      anime {
+        meanScore
+        standardDeviation
+        count
+        minutesWatched
+        statuses {
+          count
+          meanScore
+          minutesWatched
+          status
+        }
+      }
+    }
+  }
+  # week statistic
+  Page(page: 1, perPage: 250) {
+    pageInfo {
+      total
+      currentPage
+      lastPage
+      hasNextPage
+      perPage
+    }
+    activities(userId: $userId, sort: ID_DESC, type: ANIME_LIST) {
+      ... on ListActivity {
+        id
+        status
+        type
+        progress
+        createdAt
+      }
+    }
+  }
+}

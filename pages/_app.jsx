@@ -1,6 +1,12 @@
 import Script from 'next/script';
 import AppContext from '../context/AppContext';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import '../styles/globals.css';
+
+const client = new ApolloClient({
+  uri: 'https://graphql.anilist.co/',
+  cache: new InMemoryCache(),
+});
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -19,7 +25,9 @@ function MyApp({ Component, pageProps }) {
         `}
       </Script>
       <AppContext.Provider value={{}}>
-        <Component {...pageProps} />
+        <ApolloProvider client={client}>
+          <Component {...pageProps} />
+        </ApolloProvider>
       </AppContext.Provider>
     </>
   );

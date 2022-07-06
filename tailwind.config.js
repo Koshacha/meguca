@@ -23,6 +23,7 @@ module.exports = {
       yellow: colors.amber,
       pink: colors.fuchsia,
       indigo: colors.indigo,
+      red: colors.red,
       bg: '#ecf8f8',
       iconBg: '#b2e9c6',
       icon: '#14746f',
@@ -30,7 +31,7 @@ module.exports = {
       link: '#14746f',
       header: '#56ab91',
       h1: '#248277',
-    }
+    },
   },
   darkMode: 'class',
   plugins: [],
