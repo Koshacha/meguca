@@ -5,6 +5,7 @@ import Container from '../../components/Anime/Container';
 import Lead from '../../components/Anime/Lead';
 import Stat from '../../components/Anime/Stat';
 import AnimeList from '../../components/Anime/AnimeList';
+import Loading from '../../components/Anime/Loading';
 
 export default function AnimePage() {
   const { loading, error, data } = useQuery(ANIME_LIST, {
@@ -17,7 +18,7 @@ export default function AnimePage() {
   let Content;
 
   if (loading) {
-    Content = <> Loading</>;
+    Content = <Loading />;
   } else if (error) {
     console.error(error);
     Content = (

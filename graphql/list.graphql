@@ -17,6 +17,22 @@ query ($user: String, $userId: Int) {
           duration
           isFavourite
           isAdult
+          startDate {
+            year
+            month
+          }
+          relations {
+            nodes {
+              id
+              title {
+                romaji
+              }
+              startDate {
+                year
+                month
+              }
+            }
+          }
         }
         status
         score
