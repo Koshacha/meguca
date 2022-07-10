@@ -41,8 +41,10 @@ module.exports = {
       link: '#14746f',
       header: '#56ab91',
       h1: '#248277',
+      Watching: '#A0D995ee',
+      Completed: '#D3CEDFee',
     },
   },
   darkMode: 'class',
-  plugins: [],
+  plugins: [require('@tailwindcss/line-clamp')],
 };

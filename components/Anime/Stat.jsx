@@ -4,7 +4,7 @@ import { faT, faD, faM } from '@fortawesome/free-solid-svg-icons';
 
 export default function Stat({ data }) {
   return (
-    <div className="container items-center px-0 m-auto mt-5">
+    <div className="container items-center px-0 m-auto mt-5 max-w-2xl">
       <div className="flex flex-wrap pb-3 lg:mx-0">
         <div className="w-full p-2 md:w-1/3">
           <StatCard

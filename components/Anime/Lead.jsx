@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Lead(props) {
   return (
-    <div className="flex flex-col-reverse sm:flex-row items-center w-full mb-5">
+    <div className="flex flex-col-reverse sm:flex-row items-center w-full m-auto mb-5 max-w-2xl">
       <div className="flex flex-col pr-8">
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-2 text-black font-display">
           Kyubey

@@ -13,8 +13,8 @@ const nextConfig = {
     return config;
   },
   images: {
-    domains: ['meguca.site'],
-  }
+    domains: ['meguca.site', 's4.anilist.co'],
+  },
 };
 
 module.exports = nextConfig;

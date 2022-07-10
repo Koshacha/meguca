@@ -12,9 +12,14 @@ query ($user: String, $userId: Int) {
             romaji
             native
           }
+          coverImage {
+            medium
+            color
+          }
           episodes
           format
           duration
+          description
           isFavourite
           isAdult
           startDate {
@@ -35,7 +40,7 @@ query ($user: String, $userId: Int) {
           }
         }
         status
-        score
+        score(format: POINT_10_DECIMAL)
         progress
       }
     }
