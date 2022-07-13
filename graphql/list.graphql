@@ -13,7 +13,7 @@ query ($user: String, $userId: Int) {
             native
           }
           coverImage {
-            medium
+            large
             color
           }
           episodes

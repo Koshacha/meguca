@@ -6,23 +6,23 @@ export default function Stat({ data }) {
   return (
     <div className="container items-center px-0 m-auto mt-5 max-w-2xl">
       <div className="flex flex-wrap pb-3 lg:mx-0">
-        <div className="w-full p-2 md:w-1/3">
+        <div className="p-2 w-1/2">
           <StatCard
             field={'Total Anime Watched'}
             value={data.statuses[0].count}
             icon={faT}
           />
         </div>
-        <div className="w-full p-2 md:w-1/3">
+        <div className="p-2 w-1/2">
           <StatCard
             field={'Days Watched'}
             value={Math.round((data.minutesWatched / 60 / 24) * 100) / 100}
             icon={faD}
           />
         </div>
-        <div className="w-full p-2 md:w-1/3">
+        {/* <div className="p-2 w-1/3">
           <StatCard field={'Mean Score'} value={data.meanScore} icon={faM} />
-        </div>
+        </div> */}
       </div>
     </div>
   );

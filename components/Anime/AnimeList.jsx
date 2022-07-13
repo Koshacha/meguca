@@ -14,7 +14,6 @@ export default function AnimeList({ data }) {
   const lists = listOrder.map((status) => {
     for (const list of data) {
       if (list.status === status) {
-        // отсортировали по дате
         let entries = _.sortBy(
           list.entries,
           (o) => `${o.media.startDate?.year}${o.media.startDate?.month}`
@@ -40,26 +39,34 @@ export default function AnimeList({ data }) {
   });
 
   return (
-    <div className="relative w-full flex flex-row flex-wrap m-auto gap-y-4 mt-5">
+    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-5">
       {lists.map(({ name, entries }) => (
         <React.Fragment key={name}>
           {entries.map(({ media, progress, score }) => (
             <div
               key={media.id}
-              className="flex flex-row gap-3 w-full sm:w-1/2 lg:w-1/3 px-2"
+              className="group flex flex-row gap-3 w-full px-2 cursor-pointer"
             >
-              <div className="relative min-w-[100px] min-h-[141px] rounded-md overflow-hidden">
+              <div className="relative min-w-[100px] max-w-[100px] h-[141px] rounded-md overflow-hidden">
                 <Image
-                  className={cn({
+                  className={cn("object-cover", {
                     [`blur-sm`]: media.isAdult,
                   })}
-                  src={media.coverImage.medium}
+                  src={media.coverImage.large}
                   alt=""
-                  layout="fill"
+                  width={100}
+                  height={141}
                 />
+                {/* {
+                  media.isFavourite && (
+                    <div className="absolute top-2 right-2 z-2 text-sm text-center lowercase bg-red-500">
+                      любимое
+                    </div>
+                  )
+                } */}
                 <div
                   className={cn(
-                    'absolute bottom-0 w-full z-10 text-sm text-center lowercase',
+                    'absolute bottom-0 w-full z-2 text-sm text-center lowercase',
                     `${colors[name]}`
                   )}
                 >
@@ -67,11 +74,11 @@ export default function AnimeList({ data }) {
                 </div>
               </div>
               <div>
-                <h4 className="mb-2 font-bold leading-5 w-full">
+                <h4 className="line-clamp-1 mb-2 font-bold leading-5 w-full group-hover:text-gray-900">
                   {media.title.romaji}
                 </h4>
                 <div className="flex items-center mb-1 leading-5 w-full font-sans text-gray-600 text-sm">
-                  {progress == media.episodes || progress != 0
+                  {progress == media.episodes || progress == 0
                     ? `${media.episodes} ep`
                     : `${progress} of ${media.episodes} ep`}
 
